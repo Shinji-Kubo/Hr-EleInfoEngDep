@@ -2,6 +2,6 @@
 
 ## Compile Program
 Run:
-`
+```
 make compile
-`
+```
