@@ -1,0 +1,20 @@
+Size of short: 2byte
+Size of int: 4byte
+Size of long: 8byte
+Size of long long: 8byte
+Size of char: 1byte
+Size of float: 4byte
+Size of double: 8byte
+Size of short *: 8byte
+Size of int *: 8byte
+Size of long *: 8byte
+Size of long long *: 8byte
+Size of char *: 8byte
+Size of float *: 8byte
+Size of double *: 8byte
+Result of Square: 25
+Result of Pointer Square: 25
+Result of Max: 7
+Result of Swap: val1 - 2, val2 - 1
+Result of norm: 5.000000
+Result of inner_product: 32.000000
