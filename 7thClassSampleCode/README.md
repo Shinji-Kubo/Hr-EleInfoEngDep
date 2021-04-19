@@ -1,4 +1,4 @@
-# 2nd Class Sample Code
+# 7th Class Sample Code
 
 ## Compile Program
 Run:

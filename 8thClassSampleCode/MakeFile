@@ -1,0 +1,3 @@
+.PHONY: compile
+compile:
+	cc -lm -o kadai08 kadai08.c

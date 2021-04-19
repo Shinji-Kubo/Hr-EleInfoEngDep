@@ -1,4 +1,4 @@
-### 1st Class Sample Code
+# 1st Class Sample Code
 
 ## Compile Program
 Run:
