@@ -3,5 +3,7 @@
 ## Compile Program
 Run:
 ```
-make compile
+make compile1
+make compile2
+make compile3
 ```
