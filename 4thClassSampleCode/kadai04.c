@@ -37,7 +37,7 @@ main() {
 	insert_cell(&head, "Apple");
 	insert_cell(&head, "Orange");
 	insert_cell(&head, "Grape");
-	insert_cell(&head, "Strewberry");
+	insert_cell(&head, "Strawberry");
 	insert_cell(&head, "Banana");
 
 	print_cell_all(head.next);
