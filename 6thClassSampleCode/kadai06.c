@@ -31,7 +31,7 @@ HANOI pop(HANOI *headp) {
 	d.m = stack->m;
 	d.next = stack->next;
 	headp->next = stack->next;
-	free(stack->next);
+	free(stack);
 	return d;
 }
 
