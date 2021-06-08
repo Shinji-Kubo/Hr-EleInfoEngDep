@@ -13,11 +13,14 @@ int E[MAX+1][MAX+1] = {{0,1,1,0,0,0},
 			{0,1,0,0,1,0}};
 
 void enqueue(int *queue, int d) {
-	if (rear > N-1) {
+	if (front == rear + 1) {
 		exit(1);
 	}
 	*(queue+rear) = d;
 	rear = rear + 1;
+	if (rear > N - 1) {
+		rear = 0;
+	}
 }
 
 int dequeue(int *queue) {
@@ -26,6 +29,9 @@ int dequeue(int *queue) {
 	}
 	int x = *(queue+front);
 	front = front + 1;
+	if (front > N - 1) {
+		front = 0;
+	}
 	return x;
 }
 
@@ -55,7 +61,7 @@ void breadth_first_search(int *queue,int start) {
 
 main() {
 
-	int queue[N];
+	int queue[4];
 	int start = 5;
 
 	breadth_first_search(queue, start);
