@@ -16,7 +16,7 @@ void push (HANOI *headp, char from, char to, char sub, int m) {
 	new_stack->sub = sub;
 	new_stack->m = m;
 	new_stack->next = headp->next;
-	headp->next = new_stack;	
+	headp->next = new_stack;
 }
 
 HANOI pop(HANOI *headp) {
@@ -52,7 +52,7 @@ void hanoi(HANOI *headp, char from, char to, char sub, int m) {
 main() {
 	HANOI head={'\0','\0','\0',0,NULL};
 	
-	int m = 3;
+	int m = 5;
 	hanoi(&head, 'A', 'B', 'C', m);
 
 	return 0;
