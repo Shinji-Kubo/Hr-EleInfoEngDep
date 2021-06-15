@@ -52,7 +52,7 @@ void hanoi(HANOI *headp, char from, char to, char sub, int m) {
 main() {
 	HANOI head={'\0','\0','\0',0,NULL};
 	
-	int m = 3;
+	int m = 5;
 	hanoi(&head, 'A', 'B', 'C', m);
 
 	return 0;
