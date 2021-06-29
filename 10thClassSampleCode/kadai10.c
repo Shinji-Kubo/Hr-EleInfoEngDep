@@ -14,6 +14,7 @@ int D100[] = {744, 734, 851, 672, 312, 814, 42, 847, 100, 282, 30, 742, 98, 266,
 void selection_sort(int *A, int n) {
 	int i;
 	int j;
+	int k = 0;
 	int min;
 	int tmp;
 
@@ -23,32 +24,38 @@ void selection_sort(int *A, int n) {
 			if (A[j] < A[min]) {
 				min = j;
 			}
+			k++;
 		}
 		tmp = A[i];
 		A[i] = A[min];
 		A[min] = tmp;
 	}
+	printf("Counter : %d\n", k);
 }
 
 void bubble_sort(int *A, int n) {
 	int i;
 	int j;
+	int k = 0;
 	int tmp;
 	
 	for(i = 0; i < n-1; i++) {
-		for (j = n-1; j < i; j--) {
+		for (j = n-1; j > i; j--) {
 			if (A[j-1] > A[j]) {
 				tmp = A[j];
 				A[j] = A[j-1];
 				A[j-1] = tmp;
 			}
+			k++;
 		}
 	}
+	printf("Counter : %d\n", k);
 }
 
 void insertion_sort(int *A, int n) {
 	int i;
 	int j;
+	int k = 0;
 	int tmp;
 
 	for (i = 1; i < n; i++) {
@@ -57,9 +64,11 @@ void insertion_sort(int *A, int n) {
 		while (j >= 0 && tmp < A[j]) {
 			A[j+1] = A[j];
 			j--;
+			k++;
 		}
 		A[j+1] = tmp;
 	}
+	printf("Counter : %d\n", k);
 }
 
 main() {
@@ -69,8 +78,8 @@ main() {
 	for (i=0; i<10; i++) {
 		A[i] = D10[i];
 	}
-	selection_sort(A, 10);
 	printf("D10-selection\n");
+	selection_sort(A, 10);
 	for (i=0; i<10; i++) {
 		printf("%d,", A[i]);
 	}
@@ -78,8 +87,8 @@ main() {
 	for (i=0; i<20; i++) {
 		A[i] = D20[i];
 	}
-	selection_sort(A, 20);
 	printf("D20-selection\n");
+	selection_sort(A, 20);
 	for (i=0; i<20; i++) {
 		printf("%d,", A[i]);
 	}
@@ -87,8 +96,8 @@ main() {
 	for (i=0; i<30; i++) {
 		A[i] = D30[i];
 	}
-	selection_sort(A, 30);
 	printf("D30-selection\n");
+	selection_sort(A, 30);
 	for (i=0; i<30; i++) {
 		printf("%d,", A[i]);
 	}
@@ -96,8 +105,8 @@ main() {
 	for (i=0; i<40; i++) {
 		A[i] = D40[i];
 	}
-	selection_sort(A, 40);
 	printf("D40-selection\n");
+	selection_sort(A, 40);
 	for (i=0; i<40; i++) {
 		printf("%d,", A[i]);
 	}
@@ -105,8 +114,8 @@ main() {
 	for (i=0; i<50; i++) {
 		A[i] = D50[i];
 	}
-	selection_sort(A, 50);
 	printf("D50-selection\n");
+	selection_sort(A, 50);
 	for (i=0; i<50; i++) {
 		printf("%d,", A[i]);
 	}
@@ -114,8 +123,8 @@ main() {
 	for (i=0; i<60; i++) {
 		A[i] = D60[i];
 	}
-	selection_sort(A, 60);
 	printf("D60-selection\n");
+	selection_sort(A, 60);
 	for (i=0; i<60; i++) {
 		printf("%d,", A[i]);
 	}
@@ -123,8 +132,8 @@ main() {
 	for (i=0; i<70; i++) {
 		A[i] = D70[i];
 	}
-	selection_sort(A, 70);
 	printf("D70-selection\n");
+	selection_sort(A, 70);
 	for (i=0; i<70; i++) {
 		printf("%d,", A[i]);
 	}
@@ -132,8 +141,8 @@ main() {
 	for (i=0; i<80; i++) {
 		A[i] = D80[i];
 	}
-	selection_sort(A, 80);
 	printf("D80-selection\n");
+	selection_sort(A, 80);
 	for (i=0; i<80; i++) {
 		printf("%d,", A[i]);
 	}
@@ -141,8 +150,8 @@ main() {
 	for (i=0; i<90; i++) {
 		A[i] = D90[i];
 	}
-	selection_sort(A, 90);
 	printf("D90-selection\n");
+	selection_sort(A, 90);
 	for (i=0; i<90; i++) {
 		printf("%d,", A[i]);
 	}
@@ -150,19 +159,19 @@ main() {
 	for (i=0; i<100; i++) {
 		A[i] = D100[i];
 	}
-	selection_sort(A, 100);
 	printf("D100-selection\n");
+	selection_sort(A, 100);
 	for (i=0; i<100; i++) {
 		printf("%d,", A[i]);
 	}
 	printf("\n\n\n");
 
-	
+
 	for (i=0; i<10; i++) {
 		A[i] = D10[i];
 	}
-	bubble_sort(A, 10);
 	printf("D10-bubble\n");
+	bubble_sort(A, 10);
 	for (i=0; i<10; i++) {
 		printf("%d,", A[i]);
 	}
@@ -170,8 +179,8 @@ main() {
 	for (i=0; i<20; i++) {
 		A[i] = D20[i];
 	}
-	bubble_sort(A, 20);
 	printf("D20-bubble\n");
+	bubble_sort(A, 20);
 	for (i=0; i<20; i++) {
 		printf("%d,", A[i]);
 	}
@@ -179,8 +188,8 @@ main() {
 	for (i=0; i<30; i++) {
 		A[i] = D30[i];
 	}
-	bubble_sort(A, 30);
 	printf("D30-bubble\n");
+	bubble_sort(A, 30);
 	for (i=0; i<30; i++) {
 		printf("%d,", A[i]);
 	}
@@ -188,8 +197,8 @@ main() {
 	for (i=0; i<40; i++) {
 		A[i] = D40[i];
 	}
-	bubble_sort(A, 40);
 	printf("D40-bubble\n");
+	bubble_sort(A, 40);
 	for (i=0; i<40; i++) {
 		printf("%d,", A[i]);
 	}
@@ -197,8 +206,8 @@ main() {
 	for (i=0; i<50; i++) {
 		A[i] = D50[i];
 	}
-	bubble_sort(A, 50);
 	printf("D50-bubble\n");
+	bubble_sort(A, 50);
 	for (i=0; i<50; i++) {
 		printf("%d,", A[i]);
 	}
@@ -206,8 +215,8 @@ main() {
 	for (i=0; i<60; i++) {
 		A[i] = D60[i];
 	}
-	bubble_sort(A, 60);
 	printf("D60-bubble\n");
+	bubble_sort(A, 60);
 	for (i=0; i<60; i++) {
 		printf("%d,", A[i]);
 	}
@@ -215,8 +224,8 @@ main() {
 	for (i=0; i<70; i++) {
 		A[i] = D70[i];
 	}
-	bubble_sort(A, 70);
 	printf("D70-bubble\n");
+	bubble_sort(A, 70);
 	for (i=0; i<70; i++) {
 		printf("%d,", A[i]);
 	}
@@ -224,8 +233,8 @@ main() {
 	for (i=0; i<80; i++) {
 		A[i] = D80[i];
 	}
-	bubble_sort(A, 80);
 	printf("D80-bubble\n");
+	bubble_sort(A, 80);
 	for (i=0; i<80; i++) {
 		printf("%d,", A[i]);
 	}
@@ -233,8 +242,8 @@ main() {
 	for (i=0; i<90; i++) {
 		A[i] = D90[i];
 	}
-	bubble_sort(A, 90);
 	printf("D90-bubble\n");
+	bubble_sort(A, 90);
 	for (i=0; i<90; i++) {
 		printf("%d,", A[i]);
 	}
@@ -242,19 +251,19 @@ main() {
 	for (i=0; i<100; i++) {
 		A[i] = D100[i];
 	}
-	bubble_sort(A, 100);
 	printf("D100-bubble\n");
+	bubble_sort(A, 100);
 	for (i=0; i<100; i++) {
 		printf("%d,", A[i]);
 	}
-	printf("\n\n\n");	
+	printf("\n\n\n");
 
 
 	for (i=0; i<10; i++) {
 		A[i] = D10[i];
 	}
-	insertion_sort(A, 10);
 	printf("D10-insertion\n");
+	insertion_sort(A, 10);
 	for (i=0; i<10; i++) {
 		printf("%d,", A[i]);
 	}
@@ -262,8 +271,8 @@ main() {
 	for (i=0; i<20; i++) {
 		A[i] = D20[i];
 	}
-	insertion_sort(A, 20);
 	printf("D20-insertion\n");
+	insertion_sort(A, 20);
 	for (i=0; i<20; i++) {
 		printf("%d,", A[i]);
 	}
@@ -271,8 +280,8 @@ main() {
 	for (i=0; i<30; i++) {
 		A[i] = D30[i];
 	}
-	insertion_sort(A, 30);
 	printf("D30-insertion\n");
+	insertion_sort(A, 30);
 	for (i=0; i<30; i++) {
 		printf("%d,", A[i]);
 	}
@@ -280,8 +289,8 @@ main() {
 	for (i=0; i<40; i++) {
 		A[i] = D40[i];
 	}
-	insertion_sort(A, 40);
 	printf("D40-insertion\n");
+	insertion_sort(A, 40);
 	for (i=0; i<40; i++) {
 		printf("%d,", A[i]);
 	}
@@ -289,8 +298,8 @@ main() {
 	for (i=0; i<50; i++) {
 		A[i] = D50[i];
 	}
-	insertion_sort(A, 50);
 	printf("D50-insertion\n");
+	insertion_sort(A, 50);
 	for (i=0; i<50; i++) {
 		printf("%d,", A[i]);
 	}
@@ -298,8 +307,8 @@ main() {
 	for (i=0; i<60; i++) {
 		A[i] = D60[i];
 	}
-	insertion_sort(A, 60);
 	printf("D60-insertion\n");
+	insertion_sort(A, 60);
 	for (i=0; i<60; i++) {
 		printf("%d,", A[i]);
 	}
@@ -307,8 +316,8 @@ main() {
 	for (i=0; i<70; i++) {
 		A[i] = D70[i];
 	}
-	insertion_sort(A, 70);
 	printf("D70-insertion\n");
+	insertion_sort(A, 70);
 	for (i=0; i<70; i++) {
 		printf("%d,", A[i]);
 	}
@@ -316,8 +325,8 @@ main() {
 	for (i=0; i<80; i++) {
 		A[i] = D80[i];
 	}
-	insertion_sort(A, 80);
 	printf("D80-insertion\n");
+	insertion_sort(A, 80);
 	for (i=0; i<80; i++) {
 		printf("%d,", A[i]);
 	}
@@ -325,8 +334,8 @@ main() {
 	for (i=0; i<90; i++) {
 		A[i] = D90[i];
 	}
-	insertion_sort(A, 90);
 	printf("D90-insertion\n");
+	insertion_sort(A, 90);
 	for (i=0; i<90; i++) {
 		printf("%d,", A[i]);
 	}
@@ -334,12 +343,13 @@ main() {
 	for (i=0; i<100; i++) {
 		A[i] = D100[i];
 	}
-	insertion_sort(A, 100);
 	printf("D100-insertion\n");
+	insertion_sort(A, 100);
 	for (i=0; i<100; i++) {
 		printf("%d,", A[i]);
 	}
-	printf("\n\n\n");	
-
+	printf("\n\n\n");
+	
+	
 	return 0;
 }
