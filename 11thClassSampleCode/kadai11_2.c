@@ -61,12 +61,6 @@ main() {
 	}
 	quick_sort(A, 0, n-1);
 	printf("A01\n");
-	for (i=0; i<n; i++) {
-		printf("%d,", A[i]);
-	}
-	printf("\n");
-	printf("A01 Computational Complexity1 : %d\n", cout1);
-	printf("A01 Computational Complexity2 : %d\n", cout2);
 	printf("A01 Computational ComplexitySum : %d\n\n\n", cout1+cout2);
 
 	
@@ -78,12 +72,6 @@ main() {
 	}
 	quick_sort(A, 0, n-1);
 	printf("A02\n");
-	for (i=0; i<n; i++) {
-		printf("%d,", A[i]);
-	}
-	printf("\n");
-	printf("A02 Computational Complexity1 : %d\n", cout1);
-	printf("A02 Computational Complexity2 : %d\n", cout2);
 	printf("A02 Computational ComplexitySum : %d\n\n\n", cout1+cout2);
 
 	
@@ -95,12 +83,6 @@ main() {
 	}
 	quick_sort(A, 0, n-1);
 	printf("A03\n");
-	for (i=0; i<n; i++) {
-		printf("%d,", A[i]);
-	}
-	printf("\n");
-	printf("A03 Computational Complexity1 : %d\n", cout1);
-	printf("A03 Computational Complexity2 : %d\n", cout2);
 	printf("A03 Computational ComplexitySum : %d\n\n\n", cout1+cout2);
 
 
@@ -112,12 +94,6 @@ main() {
 	}
 	quick_sort(A, 0, n-1);
 	printf("A04\n");
-	for (i=0; i<n; i++) {
-		printf("%d,", A[i]);
-	}
-	printf("\n");
-	printf("A04 Computational Complexity1 : %d\n", cout1);
-	printf("A04 Computational Complexity2 : %d\n", cout2);
 	printf("A04 Computational ComplexitySum : %d\n\n\n", cout1+cout2);
 
 	cout1 = 0;
@@ -128,12 +104,6 @@ main() {
 	}
 	quick_sort(A, 0, n-1);
 	printf("A05\n");
-	for (i=0; i<n; i++) {
-		printf("%d,", A[i]);
-	}
-	printf("\n");
-	printf("A05 Computational Complexity1 : %d\n", cout1);
-	printf("A05 Computational Complexity2 : %d\n", cout2);
 	printf("A05 Computational ComplexitySum : %d\n\n\n", cout1+cout2);
 
 
@@ -145,12 +115,6 @@ main() {
 	}
 	quick_sort(A, 0, n-1);
 	printf("A06\n");
-	for (i=0; i<n; i++) {
-		printf("%d,", A[i]);
-	}
-	printf("\n");
-	printf("A06 Computational Complexity1 : %d\n", cout1);
-	printf("A06 Computational Complexity2 : %d\n", cout2);
 	printf("A06 Computational ComplexitySum : %d\n\n\n", cout1+cout2);
 
 
@@ -162,12 +126,6 @@ main() {
 	}
 	quick_sort(A, 0, n-1);
 	printf("A07\n");
-	for (i=0; i<n; i++) {
-		printf("%d,", A[i]);
-	}
-	printf("\n");
-	printf("A07 Computational Complexity1 : %d\n", cout1);
-	printf("A07 Computational Complexity2 : %d\n", cout2);
 	printf("A07 Computational ComplexitySum : %d\n\n\n", cout1+cout2);
 
 
@@ -179,12 +137,6 @@ main() {
 	}
 	quick_sort(A, 0, n-1);
 	printf("A08\n");
-	for (i=0; i<n; i++) {
-		printf("%d,", A[i]);
-	}
-	printf("\n");
-	printf("A08 Computational Complexity1 : %d\n", cout1);
-	printf("A08 Computational Complexity2 : %d\n", cout2);
 	printf("A08 Computational ComplexitySum : %d\n\n\n", cout1+cout2);
 
 
@@ -196,12 +148,6 @@ main() {
 	}
 	quick_sort(A, 0, n-1);
 	printf("A09\n");
-	for (i=0; i<n; i++) {
-		printf("%d,", A[i]);
-	}
-	printf("\n");
-	printf("A09 Computational Complexity1 : %d\n", cout1);
-	printf("A09 Computational Complexity2 : %d\n", cout2);
 	printf("A09 Computational ComplexitySum : %d\n\n\n", cout1+cout2);
 
 
@@ -213,12 +159,6 @@ main() {
 	}
 	quick_sort(A, 0, n-1);
 	printf("A10\n");
-	for (i=0; i<n; i++) {
-		printf("%d,", A[i]);
-	}
-	printf("\n");
-	printf("A10 Computational Complexity1 : %d\n", cout1);
-	printf("A10 Computational Complexity2 : %d\n", cout2);
 	printf("A10 Computational ComplexitySum : %d\n\n\n", cout1+cout2);
 
 	return 0;
