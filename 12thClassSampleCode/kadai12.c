@@ -1,10 +1,14 @@
 #include<stdio.h>
+#include"sort.dat"
+
+int cout1 = 0;
+int cout2 = 0;
 
 void merge(int *A, int left, int mid, int right) {
 	int i = left;
 	int j = mid + 1;
 	int k = 0;
-	int *B;
+	int B[10000];
 
 	while (i <= mid && j <= right) {
 		if (A[i] <= A[j]) {
@@ -22,17 +26,19 @@ void merge(int *A, int left, int mid, int right) {
 			B[k] = A[j];
 			j++;
 			k++;
+			cout1++;
 		}
 	} else {
 		while(i <= mid) {
 			B[k] = A[i];
 			i++;
 			k++;
+			cout2++;
 		}
 	}
 
 	k = 0;
-	for (i=left; i<right; i++) {
+	for (i=left; i<right+1; i++) {
 		A[i] = B[k];
 		k++;
 	}
@@ -52,6 +58,175 @@ void merge_sort(int *A, int left, int right) {
 }
 
 main() {
+	int A[10000];
+	int i, n;
+
+	n = 1000;
+	for (i=0; i<n; i++) {
+		A[i] = A01[i];
+	}
+	merge_sort(A, 0, n-1);
+	printf("A01\n");
+	for (i=0; i<n; i++) {
+		printf("%d,", A[i]);
+	}
+	printf("\n");
+	printf("A01 Computational Complexity1 : %d\n", cout1);
+	printf("A01 Computational Complexity2 : %d\n", cout2);
+	printf("A01 Computational ComplexitySum : %d\n\n\n", cout1+cout2);
+
+	
+	cout1 = 0;
+	cout2 = 0;
+	n = 2000;
+	for (i=0; i<n; i++) {
+		A[i] = A02[i];
+	}
+	merge_sort(A, 0, n-1);
+	printf("A02\n");
+	for (i=0; i<n; i++) {
+		printf("%d,", A[i]);
+	}
+	printf("\n");
+	printf("A02 Computational Complexity1 : %d\n", cout1);
+	printf("A02 Computational Complexity2 : %d\n", cout2);
+	printf("A02 Computational ComplexitySum : %d\n\n\n", cout1+cout2);
+
+	
+	cout1 = 0;
+	cout2 = 0;
+	n = 3000;
+	for (i=0; i<n; i++) {
+		A[i] = A03[i];
+	}
+	merge_sort(A, 0, n-1);
+	printf("A03\n");
+	for (i=0; i<n; i++) {
+		printf("%d,", A[i]);
+	}
+	printf("\n");
+	printf("A03 Computational Complexity1 : %d\n", cout1);
+	printf("A03 Computational Complexity2 : %d\n", cout2);
+	printf("A03 Computational ComplexitySum : %d\n\n\n", cout1+cout2);
+
+
+	cout1 = 0;
+	cout2 = 0;
+	n = 4000;
+	for (i=0; i<n; i++) {
+		A[i] = A04[i];
+	}
+	merge_sort(A, 0, n-1);
+	printf("A04\n");
+	for (i=0; i<n; i++) {
+		printf("%d,", A[i]);
+	}
+	printf("\n");
+	printf("A04 Computational Complexity1 : %d\n", cout1);
+	printf("A04 Computational Complexity2 : %d\n", cout2);
+	printf("A04 Computational ComplexitySum : %d\n\n\n", cout1+cout2);
+
+	cout1 = 0;
+	cout2 = 0;
+	n = 5000;
+	for (i=0; i<n; i++) {
+		A[i] = A05[i];
+	}
+	merge_sort(A, 0, n-1);
+	printf("A05\n");
+	for (i=0; i<n; i++) {
+		printf("%d,", A[i]);
+	}
+	printf("\n");
+	printf("A05 Computational Complexity1 : %d\n", cout1);
+	printf("A05 Computational Complexity2 : %d\n", cout2);
+	printf("A05 Computational ComplexitySum : %d\n\n\n", cout1+cout2);
+
+
+	cout1 = 0;
+	cout2 = 0;
+	n = 6000;
+	for (i=0; i<n; i++) {
+		A[i] = A06[i];
+	}
+	merge_sort(A, 0, n-1);
+	printf("A06\n");
+	for (i=0; i<n; i++) {
+		printf("%d,", A[i]);
+	}
+	printf("\n");
+	printf("A06 Computational Complexity1 : %d\n", cout1);
+	printf("A06 Computational Complexity2 : %d\n", cout2);
+	printf("A06 Computational ComplexitySum : %d\n\n\n", cout1+cout2);
+
+
+	cout1 = 0;
+	cout2 = 0;
+	n = 7000;
+	for (i=0; i<n; i++) {
+		A[i] = A07[i];
+	}
+	merge_sort(A, 0, n-1);
+	printf("A07\n");
+	for (i=0; i<n; i++) {
+		printf("%d,", A[i]);
+	}
+	printf("\n");
+	printf("A07 Computational Complexity1 : %d\n", cout1);
+	printf("A07 Computational Complexity2 : %d\n", cout2);
+	printf("A07 Computational ComplexitySum : %d\n\n\n", cout1+cout2);
+
+
+	cout1 = 0;
+	cout2 = 0;
+	n = 8000;
+	for (i=0; i<n; i++) {
+		A[i] = A08[i];
+	}
+	merge_sort(A, 0, n-1);
+	printf("A08\n");
+	for (i=0; i<n; i++) {
+		printf("%d,", A[i]);
+	}
+	printf("\n");
+	printf("A08 Computational Complexity1 : %d\n", cout1);
+	printf("A08 Computational Complexity2 : %d\n", cout2);
+	printf("A08 Computational ComplexitySum : %d\n\n\n", cout1+cout2);
+
+
+	cout1 = 0;
+	cout2 = 0;
+	n = 9000;
+	for (i=0; i<n; i++) {
+		A[i] = A09[i];
+	}
+	merge_sort(A, 0, n-1);
+	printf("A09\n");
+	for (i=0; i<n; i++) {
+		printf("%d,", A[i]);
+	}
+	printf("\n");
+	printf("A09 Computational Complexity1 : %d\n", cout1);
+	printf("A09 Computational Complexity2 : %d\n", cout2);
+	printf("A09 Computational ComplexitySum : %d\n\n\n", cout1+cout2);
+
+
+	cout1 = 0;
+	cout2 = 0;
+	n = 10000;
+	for (i=0; i<n; i++) {
+		A[i] = A10[i];
+	}
+	merge_sort(A, 0, n-1);
+	printf("A10\n");
+	for (i=0; i<n; i++) {
+		printf("%d,", A[i]);
+	}
+	printf("\n");
+	printf("A10 Computational Complexity1 : %d\n", cout1);
+	printf("A10 Computational Complexity2 : %d\n", cout2);
+	printf("A10 Computational ComplexitySum : %d\n\n\n", cout1+cout2);
+	
 
 	return 0;
 }
