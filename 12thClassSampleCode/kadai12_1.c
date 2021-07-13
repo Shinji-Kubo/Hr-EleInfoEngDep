@@ -66,8 +66,7 @@ main() {
 		A[i] = A01[i];
 	}
 	merge_sort(A, 0, n-1);
-	printf("A01\n");
-	printf("A01 Computational ComplexitySum : %d\n\n\n", cout1+cout2);
+	printf("1000 %d\n", cout1+cout2);
 
 	
 	cout1 = 0;
@@ -77,8 +76,7 @@ main() {
 		A[i] = A02[i];
 	}
 	merge_sort(A, 0, n-1);
-	printf("A02\n");
-	printf("A02 Computational ComplexitySum : %d\n\n\n", cout1+cout2);
+	printf("2000 %d\n", cout1+cout2);
 
 	
 	cout1 = 0;
@@ -88,8 +86,7 @@ main() {
 		A[i] = A03[i];
 	}
 	merge_sort(A, 0, n-1);
-	printf("A03\n");
-	printf("A03 Computational ComplexitySum : %d\n\n\n", cout1+cout2);
+	printf("3000 %d\n", cout1+cout2);
 
 
 	cout1 = 0;
@@ -99,8 +96,7 @@ main() {
 		A[i] = A04[i];
 	}
 	merge_sort(A, 0, n-1);
-	printf("A04\n");
-	printf("A04 Computational ComplexitySum : %d\n\n\n", cout1+cout2);
+	printf("4000 %d\n", cout1+cout2);
 
 	cout1 = 0;
 	cout2 = 0;
@@ -109,8 +105,7 @@ main() {
 		A[i] = A05[i];
 	}
 	merge_sort(A, 0, n-1);
-	printf("A05\n");
-	printf("A05 Computational ComplexitySum : %d\n\n\n", cout1+cout2);
+	printf("5000 %d\n", cout1+cout2);
 
 
 	cout1 = 0;
@@ -120,8 +115,7 @@ main() {
 		A[i] = A06[i];
 	}
 	merge_sort(A, 0, n-1);
-	printf("A06\n");
-	printf("A06 Computational ComplexitySum : %d\n\n\n", cout1+cout2);
+	printf("6000 %d\n", cout1+cout2);
 
 
 	cout1 = 0;
@@ -131,8 +125,7 @@ main() {
 		A[i] = A07[i];
 	}
 	merge_sort(A, 0, n-1);
-	printf("A07\n");
-	printf("A07 Computational ComplexitySum : %d\n\n\n", cout1+cout2);
+	printf("7000 %d\n", cout1+cout2);
 
 
 	cout1 = 0;
@@ -142,8 +135,7 @@ main() {
 		A[i] = A08[i];
 	}
 	merge_sort(A, 0, n-1);
-	printf("A08\n");
-	printf("A08 Computational ComplexitySum : %d\n\n\n", cout1+cout2);
+	printf("8000 %d\n", cout1+cout2);
 
 
 	cout1 = 0;
@@ -153,8 +145,7 @@ main() {
 		A[i] = A09[i];
 	}
 	merge_sort(A, 0, n-1);
-	printf("A09\n");
-	printf("A09 Computational ComplexitySum : %d\n\n\n", cout1+cout2);
+	printf("9000 %d\n", cout1+cout2);
 
 
 	cout1 = 0;
@@ -164,8 +155,8 @@ main() {
 		A[i] = A10[i];
 	}
 	merge_sort(A, 0, n-1);
-	printf("A10\n");
-	printf("A10 Computational ComplexitySum : %d\n\n\n", cout1+cout2);
+	printf("10000 %d\n", cout1+cout2);
+	
 	
 
 	return 0;
