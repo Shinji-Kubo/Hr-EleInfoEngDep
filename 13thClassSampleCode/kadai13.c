@@ -68,9 +68,11 @@ main() {
 	int i;
 	
 	djikstra(0);
-		
-	for (i=0; i<N; i++) {
-		printf("%d\n", D[i]);
+	
+	printf("頂点 最短距離\n");
+	printf("------------------------\n");	
+	for (i=1; i<N; i++) {
+		printf("%d %d\n", i+1, D[i]);
 	}
 	return 0;
 }
