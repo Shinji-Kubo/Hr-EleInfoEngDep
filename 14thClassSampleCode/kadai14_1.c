@@ -1,11 +1,11 @@
 #include<stdio.h>
-#define N 5
-#define M 6
+#define N 10
+#define M 140
 
 int G[N+1][M+1];
 int S[N+1][M+1][N+1];
-int v[] = {0,6,4,1,3,5};
-int w[] = {0,4,3,1,1,2};
+int v[] = {0,64,70,73,27,30,68,41,94,84,14};
+int w[] = {0,35,82,6,4,97,32,56,48,13,24};
 
 void knapsack(int n, int C) {
 	int i, j, k, v1;
@@ -48,12 +48,12 @@ void knapsack(int n, int C) {
 main() {
 	int i, j, k, cnt = 1;
 
-	knapsack(5, 6);
+	knapsack(10, 140);
 	
-	for (i=0; i<=N; i++) {
-		for (j=0; j<=M; j++) {
+	for (i=1; i<=N; i++) {
+		for (j=1; j<=M; j++) {
 			printf("%d {", G[i][j]);
-			for (k=0; k<=N; k++) {
+			for (k=1; k<=N; k++) {
 				if (S[i][j][k] == 1) {
 					printf("%d ", k);
 				}
